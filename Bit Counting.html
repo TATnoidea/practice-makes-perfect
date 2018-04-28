@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta http-equiv="X-UA-Compatible" content="ie=edge">
+  <title>Document</title>
+</head>
+
+<body>
+  <script>
+    // Write a function that takes an (unsigned) integer as input, and returns the number of bits that are equal to one in the binary representation of that number.
+
+    // Example: The binary representation of 1234 is 10011010010, so the function should return 5 in this case
+
+
+    // solution 1 ==================================================================================
+    // var countBits = function (n) {
+    //   // Program Me
+    //   return n.toString(2).split('').filter(item => {
+    //     return parseInt(item) === 1 ? 1 : '';
+    //   }).length
+    // };
+
+
+    // solution 2 ==================================================================================
+    var countBits = function (n) {
+      // Program Me
+      let i = 0
+      n.toString(2).split('').map(item => {
+        if (parseInt(item) === 1) {
+          i++
+        }
+      })
+      return i
+    };
+  </script>
+</body>
+
+</html>
